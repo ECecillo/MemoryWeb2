@@ -12,12 +12,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./script.js"></script>
   </head>
-  <body>
+  <body class="dark">
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
-            <span class="link-text logo-text"><b>Mémory games </b></span>
+            <span class="link-text logo-text" style="color: var(--text-primary);">
+              <b>Mémory games</b>
+            </span>
             <svg
               aria-hidden="true"
               focusable="false"
@@ -43,6 +45,7 @@
             </svg>
           </a>
         </li>
+
         <!-- Logo et Texte Games -->
         <li class="nav-item">
           <a href="#" class="nav-link">
@@ -70,20 +73,6 @@
               </g>
             </svg>
             <span class="link-text">Games</span>
-          </a>
-        </li>
-        <!-- Logo et Texte à propos  -->
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="far fa-question-circle fa-2x"></i>
-            <span class="link-text">à propos</span>
-          </a>
-        </li>
-        <!-- Logo Contact -->
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="far fa-address-book fa-2x"></i>
-            <span class="link-text">Contact</span>
           </a>
         </li>
         <!-- Logo du Vaisseau -->
@@ -115,8 +104,23 @@
             <span class="link-text">Space</span>
           </a>
         </li>
-        <!-- Logo fusée -->
-        
+
+        <!-- Logo et Texte à propos  -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-question-circle fa-2x"></i>
+            <span class="link-text">à propos</span>
+          </a>
+        </li>
+
+        <!-- Logo Contact -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-address-book fa-2x"></i>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+
         <!-- Logo et Texte chat  -->
         <li class="nav-item">
           <a href="#" class="nav-link">
@@ -128,7 +132,8 @@
     </nav>
 
     <main>
-      <div class="">
+      <!-- En tete de catégorie  -->
+
         <header class="categorie_nav">
           <ul class="nav__links">
             <li class="Li_1">
@@ -156,84 +161,188 @@
                 <span>à telecharger</span>
               </a>
             </li>
+
+
+            <!-- 
+            Sous catégorie pour les thèmes 
+            <li class="nav_item has-dropdown">
+              <a href="#">Theme</a>
+              <ul class="dropdown">
+                <li class="dropdown-item">
+                  <a id="light" href="#">light</a>
+                </li>
+                <li class="dropdown-item">
+                  <a id="dark" href="#">dark</a>
+                </li>
+                <li class="dropdown-item">
+                  <a id="solar" href="#">solarize</a>
+                </li> -->
+              
+              </ul>
+            </li>
           </ul>
         </header>
-      </div>
 
+      <!-- Affichage des jeux  -->
       <div>
         <div class="photo-grid" style="margin: 1rem 1rem;">
-          <div
-            class="card card-tall "
-            style="background-image:url('https://store-images.s-microsoft.com/image/apps.24510.9007199267196977.0fa1befa-9d6a-4c75-9e31-5ea78fb46f4b.9e21efc3-f7a6-4853-a0de-1064dd239625?w=1400&h=875&q=90&format=jpg')"
-          >
-            1
+          <!-- 1er message ----------------------------------------------------------------- -->
+          <div class="card card-tall" style="background-image: var(--bg-I1);">
+            <!-- <a class="" href="">
+              <span></span>
+            </a> -->
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  1
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card card-tall"
-            style="background-image:url('https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')"
-          >
-            2
+          <!-- 2ieme message ----------------------------------------------------------------- -->
+          <div class="card card-tall" style="background-image:var(--bg-I2);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  2
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583531172005-814191b8b6c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80')"
-          >
-            3
+          <!-- 3ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I3);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  3
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583426573939-97d09302d76a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"
-          >
-            4
+          <!-- 4ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I4)">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  4
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
-          >
-            5
+          <!-- 5ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I5);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  5
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583445013765-46c20c4a6772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
-          >
-            6
+          <!-- 6ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I6);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  6
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card card-wide"
-            style="background-image:url('https://images.unsplash.com/photo-1583562835057-a62d1beffbf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80')"
-          >
-            7
+          <!-- 7ieme message ----------------------------------------------------------------- -->
+          <div class="card card-wide" style="background-image:var(--bg-I7);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  7
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583483425010-c566431a7710?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')"
-          >
-            8
+          <!-- 8ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I8);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  8
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583500557349-fb5238f8d946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80')"
-          >
-            9
+          <!-- 9ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I9);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  9
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583468323330-9032ad490fed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80')"
-          >
-            10
+          <!-- 10ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I10);">
+            <a class="" href="script.js">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  10
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583425423320-2386622cd2e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80')"
-          >
-            11
+          <!-- 11ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I11);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  11
+                </h6>
+              </header>
+            </div>
           </div>
-          <div
-            class="card"
-            style="background-image:url('https://images.unsplash.com/photo-1583518257225-f9a8081f6a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
-          >
-            12
+          <!-- 12ieme message ----------------------------------------------------------------- -->
+          <div class="card" style="background-image:var(--bg-I12);">
+            <a class="" href="">
+              <span></span>
+            </a>
+            <div class="module">
+              <header>
+                <h6 class="title">
+                  12
+                </h6>
+              </header>
+            </div>
           </div>
+
         </div>
       </div>
     </main>
